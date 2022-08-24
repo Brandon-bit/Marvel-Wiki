@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+
+.navbar{
+    background-color: v.$rojo;
+
+    h1{
+        font-family: 'Passion One', cursive;
+        text-transform: uppercase;
+        text-align: center;
+        color: v.$blanco;
+        margin: 0;
+        letter-spacing: -2px;
+        font-size:5rem;
+    }
+}
