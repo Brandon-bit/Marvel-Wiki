@@ -1,0 +1,30 @@
+@use '../base/variables' as v;
+
+.fondo{
+    background-image: url('../img/fondo1.jpg');
+    width: 100%;
+    min-height: 170rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-characters{
+    width: 120rem;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+    .card{
+
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Passion One', cursive;
+            color: v.$blanco;
+        }
+        
+    }
+}

@@ -52,9 +52,9 @@ function dev(done){
 
 function javascript(done){
     src('src/js/**/*.js')
-        .pipe(sourcemap.init())
+        /*.pipe(sourcemap.init())
         .pipe(terser())
-        .pipe(sourcemap.write('.'))
+        .pipe(sourcemap.write('.'))*/
         .pipe(dest('build/js'));
 
     done();
