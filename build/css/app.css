@@ -398,9 +398,27 @@ body {
 .fondo {
   background-image: url("../img/fondo1.jpg");
   width: 100%;
-  min-height: 170rem;
+  min-height: 185rem;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.fondo .cortina {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 127, 127, 0.7);
+}
+
+.buscador {
+  width: 120rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.buscador .barra {
+  width: 50%;
 }
 
 .container-characters {
@@ -409,13 +427,40 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
+  gap: 2rem;
+}
+.container-characters .card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border: solid 2px #000;
 }
 .container-characters .card img {
   width: 250px;
   height: 250px;
+  border: solid 2px #000;
 }
 .container-characters .card h3 {
   text-align: center;
   font-family: "Passion One", cursive;
-  color: #FFFFFF;
+  color: #000;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.botones {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+.botones a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.ocultar {
+  visibility: hidden;
 }
