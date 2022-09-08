@@ -374,14 +374,12 @@ body {
 
 .navbar {
   background-color: #e62429;
+  text-align: center;
 }
 .navbar a {
   text-decoration: none;
-}
-.navbar a h1 {
   font-family: "Passion One", cursive;
   text-transform: uppercase;
-  text-align: center;
   color: #FFFFFF;
   margin: 0;
   letter-spacing: 1px;
@@ -398,27 +396,28 @@ body {
 .fondo {
   background-image: url("../img/fondo1.jpg");
   width: 100%;
-  min-height: 185rem;
+  min-height: 95vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .fondo .cortina {
-  position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 95vh;
   background-color: rgba(116, 127, 127, 0.7);
+  padding-top: 2rem;
 }
 
 .buscador {
   width: 120rem;
   margin: 0 auto;
-  margin-top: 2rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  gap: 1rem;
 }
 .buscador .barra {
   width: 50%;
+  padding: 1rem;
 }
 
 .container-characters {
@@ -433,11 +432,21 @@ body {
   background-color: #FFFFFF;
   padding: 1rem;
   border: solid 2px #000;
+  width: 100%;
 }
-.container-characters .card img {
-  width: 250px;
-  height: 250px;
+.container-characters .card .img-contenedor {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
   border: solid 2px #000;
+}
+.container-characters .card .img-contenedor img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.container-characters .card .img-contenedor img:hover {
+  transform: scale(1.2);
 }
 .container-characters .card h3 {
   text-align: center;
@@ -463,4 +472,70 @@ body {
 
 .ocultar {
   visibility: hidden;
+}
+
+.contenedor-regresar {
+  text-align: center;
+}
+
+.perfil-general {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-family: "Passion One", cursive;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  margin-top: -2rem;
+  letter-spacing: 1px;
+}
+.perfil-general .div-imagen {
+  margin: auto;
+  width: 40rem;
+  height: 40rem;
+}
+.perfil-general .div-imagen img {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.perfil-general .div-info {
+  color: white;
+  padding: 3rem;
+}
+.perfil-general .div-info h1 {
+  font-size: 4rem;
+}
+.perfil-general .div-info p {
+  font-size: 2.5rem;
+  text-align: justify;
+}
+
+.comics-section {
+  width: 120rem;
+  margin: 0 auto;
+  font-family: "Passion One", cursive;
+}
+.comics-section h2 {
+  font-size: 3.5rem;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.series-section {
+  width: 120rem;
+  margin: 0 auto;
+  font-family: "Passion One", cursive;
+}
+.series-section h2 {
+  font-size: 3.5rem;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  padding: 1rem;
+  text-align: center;
 }

@@ -1,0 +1,71 @@
+@use 'base/variables' as v;
+
+.perfil-general{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    justify-content: center;
+    align-items: center;
+    font-family: 'Passion One', cursive;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    padding: 2rem;
+    margin-top: -2rem;
+    letter-spacing: 1px;
+
+
+    .div-imagen{
+        margin: auto;
+        width: 40rem;
+        height: 40rem;
+
+        img{
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .div-info{
+        color: white;
+        padding: 3rem;
+        
+        h1{
+            font-size: 4rem;
+        }
+
+        p{
+            font-size: 2.5rem;
+            text-align: justify;
+        }
+    }
+}
+
+.comics-section{
+    width: 120rem;
+    margin: 0 auto;
+    font-family: 'Passion One', cursive;
+    
+    h2{
+        font-size: 3.5rem;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+.series-section{
+    width: 120rem;
+    margin: 0 auto;
+    font-family: 'Passion One', cursive;
+
+    h2{
+        font-size: 3.5rem;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+        padding: 1rem;
+        text-align: center;
+    }
+}
